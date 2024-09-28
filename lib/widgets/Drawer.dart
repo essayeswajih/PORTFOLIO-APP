@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tpone/pages/AboutPage.dart';
+import 'package:tpone/pages/ContactPage.dart';
 
 import '../pages/HomePage.dart';
 import '../pages/ProjectsPage.dart';
@@ -62,7 +63,7 @@ class MyDrower extends StatelessWidget{
               style: TextStyle(fontSize: 24.0),
             ),
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPage()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => ContactPage()));
             },
           ),
         ],
