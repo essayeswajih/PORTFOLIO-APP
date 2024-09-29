@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tpone/pages/AboutPage.dart';
 import 'package:tpone/pages/ContactPage.dart';
+import 'package:tpone/pages/LoginPage.dart';
 
 import '../pages/HomePage.dart';
 import '../pages/ProjectsPage.dart';
@@ -66,7 +67,26 @@ class MyDrower extends StatelessWidget{
               Navigator.push(context, MaterialPageRoute(builder: (context) => ContactPage()));
             },
           ),
+          ListTile(
+            leading: const Icon(Icons.login),
+            title: const Text(
+              'Login',
+              style: TextStyle(fontSize: 24.0),
+            ),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.logout),
+            title: const Text(
+              'Logout',
+              style: TextStyle(fontSize: 24.0),
+            ),
+            onTap: null,
+          ),
         ],
+
       ),
     );
   }
