@@ -50,7 +50,7 @@ class monApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'TpOne',
-      routerConfig: _router,
+      routerConfig: _router
     );
   }
 }
