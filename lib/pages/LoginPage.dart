@@ -102,8 +102,46 @@ class _LoginPageState extends State<LoginPage> {
                       return null;
                     },
                   ),
+                  SizedBox(height: 10),
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              // Add your function or navigation logic here
+                              print("Forget Password tapped!");
+                              // For example, you can navigate to the sign-up page
+                              // Navigator.pushNamed(context, '/signup');
+                            },
+                            child: Text(
+                              "Forget Password?",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              // Add your function or navigation logic here
+                              print("I don't have an account tapped!");
+                              // For example, you can navigate to the sign-up page
+                              // Navigator.pushNamed(context, '/signup');
+                            },
+                            child: Text(
+                              "Create an account?",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ],
+                      ),
 
-                  SizedBox(height: 20),
+                    ],
+                  ),
+
+                  SizedBox(height: 10),
 
                   // Login Button
                   ElevatedButton(

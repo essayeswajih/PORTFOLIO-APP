@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../widgets/Drawer.dart';
+import 'LoginPage.dart';
 
 class HomePage extends StatelessWidget{
   @override
@@ -34,7 +35,7 @@ class HomePage extends StatelessWidget{
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-          print("Button pressed");
+          Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
         }
         ,child: Icon(Icons.save),),
       drawer: MyDrower(),
