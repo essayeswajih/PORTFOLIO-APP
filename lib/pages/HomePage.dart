@@ -20,9 +20,10 @@ class HomePage extends StatelessWidget{
             );
           },
         ),
-        title: const Text("PORTFOLIO",style: TextStyle(
+        title: const Text("ME",style: TextStyle(
             color: Colors.white
-        ),),
+          ),
+        ),
         backgroundColor: Colors.black87,
         actions: [
           IconButton(onPressed: (){}, icon: FaIcon(FontAwesomeIcons.github),color: Colors.white,),
