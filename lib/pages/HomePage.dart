@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../widgets/Drawer.dart';
+import '../widgets/Post.dart';
 import 'LoginPage.dart';
 
 class HomePage extends StatelessWidget{
@@ -31,8 +32,18 @@ class HomePage extends StatelessWidget{
           IconButton(onPressed: (){}, icon: FaIcon(FontAwesomeIcons.facebook),color: Colors.white,),
         ],
       ),
-      body: const Center(
-        child: Text("Welcome DSI32"),
+      body: Container(
+        decoration: BoxDecoration(
+          color: Colors.black12,
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Post(),
+              Post(),
+            ],
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
